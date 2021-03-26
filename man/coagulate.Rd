@@ -7,13 +7,13 @@
 \usage{
 coagulate(data, coefs)
 
-coagulate_base(DOC, dose, pH, UV254, K1, K2, x1, x2, x3, b, root = -1)
+coagulate_base(DOC, dose, pH, UV254, K1, K2, x1, x2, x3, b)
 }
 \arguments{
 \item{data}{A data frame containing columns \code{DOC}, \code{dose}, \code{pH}, and \code{UV254}.}
 
 \item{coefs}{The output of \code{\link[=edwards_coefs]{edwards_coefs()}} or a similar named vector
-containing elements \code{K1}, \code{K2}, \code{x1}, \code{x2}, \code{x3}, \code{b} and \code{root}.}
+containing elements \code{K1}, \code{K2}, \code{x1}, \code{x2}, \code{x3}, and \code{b}.}
 
 \item{DOC}{The initial DOC concentration (mg/L).}
 
@@ -29,11 +29,6 @@ used to calculate SUVA.}
 \item{x1, x2, x3}{Empirical fitting coefficients relating to pH.}
 
 \item{b}{The Langmuir term.}
-
-\item{root}{The solution to the equation presented in Edwards (1997) is
-a quadratic with two roots. \code{root} can be 1 or -1 to account for these roots,
-however we see no evidence that anything except -1 here results in realistic
-predictions.}
 }
 \value{
 A vector of predicted organic carbon concentrations (in mg/L) following
@@ -53,7 +48,7 @@ plot(DOC_final_model ~ DOC_final, data = alum_jar_tests)
 }
 \references{
 Edwards, M. 1997. Predicting DOC removal during enhanced coagulation.
-Journal - American Water Works Association, 89: 78–89.
+Journal - American Water Works Association, 89: 78-89.
 https://doi.org/10.1002/j.1551-8833.1997.tb08229.x
 
 Jekel, M.R. 1986. Interactions of humic acids and aluminum salts

@@ -4,7 +4,9 @@
 \name{edwards_jar_tests}
 \alias{edwards_jar_tests}
 \title{Example Jar Tests}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1372 rows and 7 columns.}
+\format{
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1372 rows and 7 columns.
+}
 \usage{
 edwards_jar_tests
 }
@@ -13,7 +15,7 @@ Example Jar Tests
 }
 \references{
 Edwards, M. 1997. Predicting DOC removal during enhanced coagulation.
-Journal - American Water Works Association, 89: 78–89.
+Journal - American Water Works Association, 89: 78-89.
 https://doi.org/10.1002/j.1551-8833.1997.tb08229.x
 }
 \author{
