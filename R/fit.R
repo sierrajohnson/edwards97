@@ -92,7 +92,6 @@ fit_edwards_coefs <- function(coefs, data = edwards_data("empty")) {
 #' @export
 coef.edwards_fit_optim <- function(object, ...) {
   coefs <- object$fit_optim$par
-  coefs["root"] <- sign(coefs["root"])
   coefs
 }
 

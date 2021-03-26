@@ -13,7 +13,7 @@
 #'
 #' @references
 #' Edwards, M. 1997. Predicting DOC removal during enhanced coagulation.
-#' Journal - American Water Works Association, 89: 78–89.
+#' Journal - American Water Works Association, 89: 78-89.
 #' https://doi.org/10.1002/j.1551-8833.1997.tb08229.x
 #'
 #' @examples
@@ -27,33 +27,33 @@ edwards_coefs <- function(type) {
     "Fe" = c(
       x3 = 4.96, x2 = -73.9, x1 = 280,
       K1 = -0.028, K2 = 0.23,
-      b = 0.068, root = -1
+      b = 0.068
     ),
     "Al" = c(
-      x3 = 4.91, x2 = -72.2, x1 = 284,
+      x3 = 4.91, x2 = -74.2, x1 = 284,
       K1 = -0.075, K2 = 0.56,
-      b = 0.147, root = -1
+      b = 0.147
     ),
     "General-Fe" = c(
       x3 = 6.42, x2 = -98.6, x1 = 383,
       K1 = -0.054, K2 = 0.54,
-      b = 0.092, root = -1
+      b = 0.092
     ),
     "General-Al" = c(
       x3 = 6.42, x2 = -98.6, x1 = 383,
       K1 = -0.054, K2 = 0.54,
-      b = 0.145, root = -1
+      b = 0.145
     ),
     "Low DOC" = c(
       x3 = 6.44, x2 = -99.2, x1 = 387,
       K1 = -0.053, K2 = 0.54,
-      b = 0.107, root = -1
+      b = 0.107
     ),
     # default: all NAs
     c(
       x3 = NA_real_, x2 = NA_real_, x1 = NA_real_,
       K1 = NA_real_, K2 = NA_real_,
-      b = NA_real_, root = NA_real_
+      b = NA_real_
     )
   )
 }
